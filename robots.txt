@@ -1,0 +1,11 @@
+# Robots.txt for Pam - Friendly AI Teacher
+# https://teacherpam.srv843916.hstgr.cloud/
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://teacherpam.srv843916.hstgr.cloud/sitemap.xml
+
+# Disallow admin or private paths (none currently)
+# Disallow: /admin/
