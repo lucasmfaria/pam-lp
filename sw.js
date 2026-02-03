@@ -11,7 +11,10 @@ const ASSETS_TO_CACHE = [
     '/scripts/main.js',
     '/images/pam_profile.jpg',
     '/images/pam_logo.webp',
-    '/images/hotmart_logo.png'
+    '/images/hotmart_logo.png',
+    '/images/avatars/maria.png',
+    '/images/avatars/joao.png',
+    '/images/avatars/ana.png'
 ];
 
 // Install event - cache assets
