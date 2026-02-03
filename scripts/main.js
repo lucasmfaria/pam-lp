@@ -6,6 +6,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     initSmoothScroll();
     initFadeInAnimations();
+    registerServiceWorker();
 });
 
 /**
@@ -55,5 +56,20 @@ function initFadeInAnimations() {
     } else {
         // Fallback for older browsers
         fadeElements.forEach(el => el.classList.add('visible'));
+    }
+}
+
+/**
+ * Register Service Worker for PWA capabilities
+ */
+function registerServiceWorker() {
+    if ('serviceWorker' in navigator) {
+        navigator.serviceWorker.register('/sw.js')
+            .then((registration) => {
+                console.log('ServiceWorker registered:', registration.scope);
+            })
+            .catch((error) => {
+                console.log('ServiceWorker registration failed:', error);
+            });
     }
 }
