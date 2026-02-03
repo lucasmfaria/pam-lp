@@ -5,6 +5,8 @@ const CACHE_NAME = 'pam-cache-v1';
 const ASSETS_TO_CACHE = [
     '/',
     '/index.html',
+    '/en/',
+    '/en/index.html',
     '/styles/main.css',
     '/scripts/main.js',
     '/images/pam_profile.jpg',
