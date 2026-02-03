@@ -623,6 +623,73 @@ ul {
     font-size: var(--font-size-sm);
 }
 
+/* Free Trial Banner */
+.pricing__free-banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--space-md);
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: var(--space-md) var(--space-lg);
+    border-radius: var(--radius-lg);
+    margin-bottom: var(--space-xl);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+    animation: pulse-banner 2s ease-in-out infinite;
+}
+
+@keyframes pulse-banner {
+
+    0%,
+    100% {
+        box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
+    }
+
+    50% {
+        box-shadow: 0 4px 30px rgba(37, 211, 102, 0.5);
+    }
+}
+
+.free-banner__icon {
+    font-size: var(--font-size-3xl);
+    flex-shrink: 0;
+}
+
+.free-banner__content {
+    text-align: left;
+}
+
+.free-banner__content strong {
+    font-size: var(--font-size-lg);
+    display: block;
+    margin-bottom: var(--space-xs);
+}
+
+.free-banner__content p {
+    font-size: var(--font-size-sm);
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Free Trial Card Badge */
+.pricing-card__free-trial {
+    background: linear-gradient(135deg, #FF6B9D 0%, #FF9F43 100%);
+    color: white;
+    font-size: var(--font-size-sm);
+    font-weight: 600;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    display: inline-block;
+    margin-bottom: var(--space-sm);
+}
+
+.pricing-card__free-trial--featured {
+    background: linear-gradient(135deg, var(--primary) 0%, #34B7F1 100%);
+}
+
 /* ======================== SUPPORT SECTION ======================== */
 .support {
     background: var(--bg-light);
